@@ -18,6 +18,7 @@
 .footer-socials-title {
     color: #FFFFFF;
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .footer-container {
@@ -26,6 +27,7 @@
 
 .footer-socials {
     max-width: 208px;
+    
 }
 
 .footer-socials-list {
@@ -34,10 +36,9 @@
 }
 
 .footer-socials { 
-    margin: 0 0 32px 120px;
+    margin: 0 83px 32px 120px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .footer-socials-icon {
@@ -54,5 +55,52 @@
 .footer-socials-link:hover,
 .footer-socials-link:focus
  {
+    background-color: #31D0AA;
+}
+
+.footer-subscribe {
+    max-width: 453px;
+}
+
+.footer-form {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.footer-form-input::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.subscribe-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.telegram-icon {
+    fill: currentColor;
+}
+
+.subscribe-button:hover {
     background-color: #31D0AA;
 }
