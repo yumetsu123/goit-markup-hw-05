@@ -69,12 +69,14 @@
 }
 
 .footer-form-input {
+    outline: none;
     width: 264px;
     height: 40px;
     border-radius: 4px;
     padding: 8px 16px;
     background-color: transparent;
     border: 1px solid #FFFFFF;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-input::placeholder {
@@ -87,7 +89,7 @@
 .subscribe-button {
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 16px;
     min-width: 165px;
     height: 40px;
     border-radius: 4px;
@@ -101,6 +103,12 @@
     fill: currentColor;
 }
 
-.subscribe-button:hover {
+.subscribe-button:hover,
+.subscribe-button:focus
+{
     background-color: #31D0AA;
+}
+
+.footer-form-input:focus {
+    border-color: #31D0AA;
 }
